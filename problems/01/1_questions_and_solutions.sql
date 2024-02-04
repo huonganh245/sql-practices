@@ -10,7 +10,6 @@ select name, price from products;
 -- 1.3 Select the name of the products with a price less than or equal to $200.
 select name from products where price <= 200;
 
-
 -- 1.4 Select all the products with a price between $60 and $120.
 select * from products where price between 60 and 120;
 select * from products where price >= 60 and price <= 120;
@@ -69,7 +68,6 @@ SELECT AVG(Price), Manufacturers.Name
    WHERE Products.Manufacturer = Manufacturers.Code
    GROUP BY Manufacturers.Name
    HAVING AVG(Price) >= 150;
-   
    
 -- 1.15 Select the name and price of the cheapest product.
 select name, price from Products 
